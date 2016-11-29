@@ -1,0 +1,186 @@
+// Set file variable
+$filename: 'scss/elements/_typography.scss';
+
+/*==============================================================================
+  @Typography - #{$filename}
+================================================================================
+ *
+ * Sets the base typographic styles for BaseWeb.
+ *
+ * 1. Set the base font size to the `<html>` element because that's what is
+ *    used when sizing things with Rem.
+ * 2. Makes safari fonts not look terrible.
+ */
+
+html {
+  font-size: $base-font-size; /* [1] */
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  color: $color;
+  -webkit-font-smoothing: subpixel-antialiased; /* [2] */
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1rem 0;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-heading;
+  line-height: $line-height-heading;
+  color: $color-header;
+
+  a {
+    color: $color-link-heading;
+    border: 0 none;
+    &:hover {
+      color: $color-link-heading-hover;
+    }
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 1.1em;
+  color: rgba($color-header, 0.6);
+}
+h6 {
+  font-size: 1.1em;
+  color: rgba($color-header, 0.3);
+}
+
+@include media-min('medium') {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  h4, h5, h6 {
+    font-size: 1.25em;
+  }
+}
+
+/**
+ * Paragraphs
+ */
+p {
+  margin: 1em 0;
+}
+
+/**
+ * Anchors
+ */
+a {
+  color: $color-link;
+  text-decoration: none;
+  border-bottom: 1px solid $border-color;
+  @include transition( $transition );
+
+  &:hover {
+    cursor: pointer;
+    color: $color-link-hover;
+    border-color: $color-link-hover;
+  }
+}
+
+/**
+ * Inline Text Elements
+ */
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+small {
+  font-size: 0.8em;
+}
+mark {
+  margin: 0 2px;
+  padding: 0 5px;
+  background: rgba(#ff0, 0.5);
+  @include border-radius();
+}
+cite {
+  font-style: italic;
+}
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted $color-light;
+}
+
+/**
+ * Stylistic Classes
+ */
+.text-lead {
+  font-size: px-to-em(22px);
+  line-height: 1.4em;
+  color: $color-dark;
+  @include font-weight(light);
+}
+
+.text-small {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+.text-soften {
+  font-weight: $base-font-weight;
+  color: $color-light;
+}
+.text-harden {
+  font-weight: bold;
+  color: $color-dark;
+}
+
+/**
+ * Alignment Classes
+ */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/**
+ * Transformation Classes
+ */
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
