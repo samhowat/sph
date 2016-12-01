@@ -84,7 +84,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", "HelveticaNeue", helvetica, arial, sans-serif;
+  font-family: freight-text-pro, "Whitney SSm A", "Whitney SSm B";
   font-size: 16px;
   line-height: 1.5em;
   font-weight: normal;
@@ -98,7 +98,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6 {
   margin: 1rem 0;
-  font-family: inherit;
+  font-family: "Whitney SSm A", "Whitney SSm B";
   font-weight: bold;
   line-height: 1.25em;
   color: #303030;
@@ -3046,6 +3046,119 @@ fieldset[disabled] .input {
 /*==============================================================================
   @Custom - scss/custom/_custom.scss
 ==============================================================================*/
+.global-header {
+  background: transparent url("../img/bg-header.jpg") top left repeat-x;
+  height: 120px;
+}
+
+.global-header .logo {
+  height: 86px;
+  width: 100px;
+  padding-top: 14px;
+  min-height: 1px;
+  float: left;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 16.66667%;
+  margin-left: 41.66667%;
+  margin-right: 41.66667%;
+}
+
+.global-header .logo.col-left {
+  float: left;
+}
+
+.global-header .logo.col-right {
+  float: right;
+}
+
+.global-header .logo a {
+  background: transparent url("../img/logo.png") no-repeat 0 0;
+  display: block;
+  height: 86px;
+  width: 86px;
+  background-size: 86px 86px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  border-bottom: 0px;
+  text-indent: -9999px;
+  outline: 0;
+}
+
+.global-header .logo a:hover {
+  background: transparent url("../img/logo.png") no-repeat 0 0;
+  text-decoration: none;
+  -webkit-transition: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: none;
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.wrapper .content {
+  min-height: 1px;
+  float: left;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 100%;
+  background-color: #F6F9FC;
+  border-radius: 6px;
+}
+
+.wrapper .content.col-left {
+  float: left;
+}
+
+.wrapper .content.col-right {
+  float: right;
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-style: normal;
+  text-rendering: optimizelegibility;
+  font-size: 3.25em;
+  color: #47525D;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.hero h2 {
+  min-height: 1px;
+  float: left;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  width: 83.33333%;
+  margin-left: 8.33333%;
+  margin-right: 8.33333%;
+  font-weight: 100;
+  font-style: normal;
+  text-rendering: optimizelegibility;
+  font-size: 1.75em;
+  margin-top: 0;
+  color: #4E5963;
+  text-align: center;
+}
+
+.hero h2.col-left {
+  float: left;
+}
+
+.hero h2.col-right {
+  float: right;
+}
+
 /*==============================================================================
   @End - scss/custom/_custom.scss
 ==============================================================================*/

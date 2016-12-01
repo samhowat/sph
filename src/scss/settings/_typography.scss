@@ -5,12 +5,12 @@
 // Font Families
 // @type font-stack
 $font-family-sans: "Helvetica Neue", "HelveticaNeue", helvetica, arial, sans-serif !default;
-$font-family-serif: georgia, "Times New Roman", times, serif !default;
+$font-family-serif: freight-text-pro, 'Whitney SSm A', 'Whitney SSm B';
 $font-family-mono: Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
 // Base Font Styles
 // @type font-stack
-$base-font-family: $font-family-sans !default;
+$base-font-family: $font-family-serif !default;
 
 // @type unit (pixel)
 $base-font-size: 16px !default;
@@ -23,7 +23,7 @@ $base-font-weight: normal !default;
 
 // Header Styles
 // @type font-stack
-$font-family-heading: inherit !default;
+$font-family-heading: "Whitney SSm A", "Whitney SSm B";
 
 // @type unit (pixel, em, percentage)
 $line-height-heading: 1.25em !default;
